@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!--资讯表 -->
+
+<hibernate-mapping package="com.gzucm.volunteer.domain">
+	<class name="Information" table="information">
+		<id name="informationID" column="informationID">
+			<generator class="uuid"></generator>
+		</id>
+		<property name="title" column="title" />
+		<property name="digest" column="digest" type="text"/>
+		<property name="imgPath" column="imgPath" />
+		<property name="num" column="num" />
+		<property name="uploadTime" column="uploadTime" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.gzucm.volunteer.domain">
+	<class name="Org" table="org">
+		<id name="orgID" column="orgID" type="string">
+			<generator class="uuid"></generator>
+		</id>
+		<property name="orgName" column="orgName" type="string" />
+		<property name="practiceNumber" column="practiceNumber" type="string" />
+		<property name="orgScale" column="orgScale" type="string" />
+		<property name="orgAddress" column="orgAddress" type="string" />
+		<property name="orgContactName" column="orgContactName" type="string" />
+		<property name="orgTelPhone" column="orgTelPhone" type="string" />
+		<property name="orgEmail" column="orgEmail" type="string" />
+		<property name="orgIntroduce" column="orgIntroduce" type="string" />
+		<property name="orgType" column="orgType" type="string" />
+		<property name="registerTime" column="registerTime" type="string" />
+		<property name="recruitNum" column="recruitNum" type="string" />
+	</class>
+</hibernate-mapping>

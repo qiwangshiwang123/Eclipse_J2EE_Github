@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!--通告表 -->
+
+<hibernate-mapping package="com.gzucm.volunteer.domain">
+	<class name="Announce" table="announce">
+		<id name="announceID" column="announceID">
+			<generator class="uuid"></generator>
+		</id>
+		<property name="title" column="title" />
+		<property name="content" column="content" />
+	</class>
+</hibernate-mapping>

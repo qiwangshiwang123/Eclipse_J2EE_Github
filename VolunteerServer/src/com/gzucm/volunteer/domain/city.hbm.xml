@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.gzucm.volunteer.domain">
+	<class name="City" table="city">
+		<id name="cityID" column="cityID" type="string">
+			<generator class="uuid"></generator>
+		</id>
+		<property name="provinceID" column="provinceID" type="string" />
+		<property name="cityName" column="cityName" type="string" />
+	</class>
+</hibernate-mapping>

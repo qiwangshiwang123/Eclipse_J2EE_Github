@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.gzucm.volunteer.domain">
+	<class name="User" table="user">
+		<id name="userID" column="userID" type="string">
+			<generator class="uuid"></generator>
+		</id>
+		<property name="account" column="account" type="string" />
+		<property name="password" column="password" type="string" />
+		<property name="userName" column="userName" type="string" />
+		<property name="nickName" column="nickName" type="string" />
+		<property name="sex" column="sex" type="string" />
+		<property name="address" column="address" type="string" />
+		<property name="portrait" column="portrait" type="string" />
+		<property name="telPhone" column="telPhone" type="string" />
+		<property name="email" column="email" type="string" />
+		<property name="introduce" column="introduce" type="string" />
+		<property name="volunteerType" column="volunteerType" type="string" />
+		<property name="experience" column="experience" type="string" />
+		<property name="applyCount" column="applyCount" type="int" />
+		<property name="isCantonese" column="isCantonese" type="string" />
+		<property name="registerTime" column="registerTime" type="java.util.Date" />
+		<property name="volunteerLastTime" column="volunteerLastTime"
+			type="long" />
+	</class>
+</hibernate-mapping>

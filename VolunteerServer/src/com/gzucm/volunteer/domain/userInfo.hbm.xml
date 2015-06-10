@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!-- 测试 -->
+
+<hibernate-mapping package="com.gzucm.volunteer.domain">
+	<class name="UserInfo" table="userInfo">
+		<id name="custBonus" column="custBonus">
+		</id>
+		<property name="custLevel" column="custLevel" />
+		<property name="custName" column="custName" />
+		<property name="userId" column="userId" />
+		<property name="usersession" column="usersession" />
+		<property name="custPwd" column="custPwd" />
+	</class>
+</hibernate-mapping>

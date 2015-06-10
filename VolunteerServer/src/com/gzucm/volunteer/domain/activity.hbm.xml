@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!-- 活动表 -->
+
+<hibernate-mapping package="com.gzucm.volunteer.domain">
+	<class name="Activity" table="activity">
+		<id name="activityID" column="activityID">
+			<generator class="uuid"></generator>
+		</id>
+		<property name="title" column="title" />
+		<property name="activityType" column="activityType" />
+		<property name="recruitPeopleNum" column="recruitPeopleNum"
+			type="int" />
+		<property name="startTime" column="startTime" type="java.util.Date" />
+		<property name="endTime" column="endTime" type="java.util.Date" />
+		<property name="deadline" column="deadline" type="java.util.Date" />
+		<property name="uploadTime" column="uploadTime" type="java.util.Date" />
+		<property name="activityAddress" column="activityAddress" />
+		<property name="activityContactName" column="activityContactName" />
+		<property name="activityTelPhone" column="activityTelPhone" />
+		<property name="activityEmail" column="activityEmail" />
+		<property name="perks" column="perks" />
+		<property name="demand" column="demand" /> 
+		<property name="activityIntroduce" column="activityIntroduce" type="text"/>
+		<property name="publisher" column="publisher" />
+		<property name="viewAcount" column="viewAcount"/>
+		<property name="imgPath" column="imgPath" />
+		<property name="isRecommended" column="isRecommended" />
+	</class>
+</hibernate-mapping>
